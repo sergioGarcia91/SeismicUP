@@ -4,3 +4,4 @@ from .save_plot import save_plot
 from .style_plot import get_TimesNewRoman_font
 from .time_mag_plot import time_magnitud_plot
 from .grl_scatter import GutenbergRichter_scatter_plot
+from .grl_line_plot import GutenbergRichter_line_plot
