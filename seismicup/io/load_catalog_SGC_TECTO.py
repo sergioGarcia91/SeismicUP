@@ -1,6 +1,7 @@
 import pandas as pd
 import os
 import re
+import numpy as np
 
 def crear_catalogo_SGC_TECTO(path_catalogo, file_excel):
   df_temp_1 =pd.read_excel(os.path.join(path_catalogo, file_excel),
