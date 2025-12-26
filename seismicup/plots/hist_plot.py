@@ -4,11 +4,11 @@ import numpy as np
 import seaborn as sns
  
 def histograma_plot(df, columna, ax_h, step_, dist_min, y_log = True):
-  p10 = df[columna].quantile(q=0.1).round(2)
-  p25 = df[columna].quantile(q=0.25).round(2) # q1
-  p50 = df[columna].quantile(q=0.5).round(2) # q2
-  p75 = df[columna].quantile(q=0.75).round(2) # q3
-  p90 = df[columna].quantile(q=0.9).round(2)
+  p10 = np.round(df[columna].quantile(q=0.1), 2)
+  p25 = np.round(df[columna].quantile(q=0.25), 2) # q1
+  p50 = np.round(df[columna].quantile(q=0.5), 2) # q2
+  p75 = np.round(df[columna].quantile(q=0.75), 2) # q3
+  p90 = np.round(df[columna].quantile(q=0.9), 2)
 
   step_ = step_
   dist_min = dist_min # valor minimo del histograma
