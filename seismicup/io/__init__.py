@@ -1,4 +1,4 @@
 from .load_catalog_SGC_1 import crear_catalogo_SGC_1
 from .load_catalog_SGC_2 import crear_catalogo_SGC_2
-from .load_catalog_SGC_LBG import crear_catalogo_SGC_TECTO
-from .load_catalog_SGC_TECTO import crear_catalogo_SGC_LBG
+from .load_catalog_SGC_LBG import crear_catalogo_SGC_LBG
+from .load_catalog_SGC_TECTO import crear_catalogo_SGC_TECTO
