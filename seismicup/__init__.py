@@ -8,7 +8,8 @@ __author__ = "Sergio García"
 __version__ = "0.1.0"
 
 # Subpaquetes principales
-#from . import io
-from . import plots
-from . import stats
-from . import utils
+from . import io # Cargar catalogos
+from . import plots # Figuras
+from . import stats # Métricas
+from . import utils # Funciones generales
+
