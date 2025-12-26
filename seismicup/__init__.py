@@ -1,7 +1,7 @@
 """
 SeismicUP
 Author: Sergio García-Arias
-""
+"""
 
 # Metadata del paquete
 __author__ = "Sergio García"
