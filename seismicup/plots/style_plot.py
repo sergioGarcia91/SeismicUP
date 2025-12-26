@@ -3,7 +3,7 @@ import matplotlib as mpl
 import matplotlib.font_manager as fm
 import urllib.request
 
-Font_url_ = "!wget https://github.com/justrajdeep/fonts/raw/master/Times%20New%20Roman.ttf"
+Font_url_ = "https://github.com/justrajdeep/fonts/raw/master/Times%20New%20Roman.ttf"
 
 def get_TimesNewRoman_font():
   urllib.request.urlretrieve(Font_url_, 'Times New Roman.ttf')
