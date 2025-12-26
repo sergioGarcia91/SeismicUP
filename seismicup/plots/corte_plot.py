@@ -6,7 +6,7 @@ import seaborn as sns
 def plot_corte(df,
                columna_x,
                columna_y,
-               filtro_corte,
+               filtro_datos,
                ax_s,
                label_s,
                invert_yaxis=True):
