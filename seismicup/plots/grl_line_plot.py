@@ -15,6 +15,6 @@ def GutenbergRichter_line_plot(b_value,
             y_data,
             ls='--',
             c='r',
-            label=f'$Log_{10}(N$) = {a}-{b}m')
+            label=f'$Log_{10}(N)$ = {a}-{b}m')
   
   ax_h.legend()
