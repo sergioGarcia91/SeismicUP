@@ -3,12 +3,13 @@ from scipy import stats # regresion lineal
 import pandas as pd
 
 def get_GutenbergRichter_values_boosted(magnitudes,
-                                         percentage_data= 0.8,
-                                         magnitud_minima= 0,
-                                         magnitud_maxima= 10,
-                                         steps_= 0.1,
-                                         n_resamples= 1000,
-                                         ventana_estabilidad= 5):
+                                        percentage_data= 0.8,
+                                        magnitud_minima= 0,
+                                        magnitud_maxima= 10,
+                                        steps_= 0.1,
+                                        n_resamples= 1000,
+                                        replace_=True,
+                                        ventana_estabilidad= 5):
   if percentage_data < 0.5:
     percentage_data = 0.5
     print('percentage_data modificado a 0.5')
@@ -32,7 +33,7 @@ def get_GutenbergRichter_values_boosted(magnitudes,
   mc_value = []
 
   for i in range(n_resamples):
-    muestra_magnitudes = np.random.choice(magnitudes_array, size=n_data, replace=False)
+    muestra_magnitudes = np.random.choice(magnitudes_array, size=n_data, replace=replace_)
     N = []
     for magnitud in magnitudes_bins:
       sumar_cantidad = (muestra_magnitudes >= magnitud).sum()
