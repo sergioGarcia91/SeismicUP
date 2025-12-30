@@ -6,3 +6,4 @@ from .mc_menor_pend import mc_menor_pendiente
 from .get_grl_values_noise import get_GutenbergRichter_values_noised
 from .get_grl_values import get_GutenbergRichter_values
 from .get_grl_values_boost import get_GutenbergRichter_values_boosted
+from .retornos_ import periodo_retorno
