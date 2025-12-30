@@ -29,7 +29,7 @@ def periodo_retorno(a_value,
   theta_days_calculado = []
   theta_months_calculado = []
   m_lista = []
-  P_retornos_ []
+  P_retornos_ = []
 
   for m in magnitudes_bins:
     # Cumulative frequency of events per year or seismicity index
