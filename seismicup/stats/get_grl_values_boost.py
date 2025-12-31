@@ -10,9 +10,9 @@ def get_GutenbergRichter_values_boosted(magnitudes,
                                         n_resamples= 1000,
                                         replace_=True,
                                         ventana_estabilidad= 5):
-  if percentage_data < 0.5:
-    percentage_data = 0.5
-    print('percentage_data modificado a 0.5')
+  if percentage_data < 0.4:
+    percentage_data = 0.4
+    print('percentage_data modificado a 0.4')
   elif percentage_data > 1.0:
     percentage_data = 1.0
     print('percentage_data modificado a 1.0')
