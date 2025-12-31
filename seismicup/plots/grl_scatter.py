@@ -29,9 +29,15 @@ def GutenbergRichter_scatter_plot(N_count,
                 np.log10(N_count),
                 c=color_,
                 s=5)  
-  
+
+  if magnitud_maxima == 10:
+    max_lim_x = magnitudes[N_count == 0][0]
+    ax_h.set_xlim(left=magnitudes.min()-0.5, right=max_lim_x+0.5)
+  else:
+    ax_h.set_xlim(left=magnitudes.min()-0.5, right=magnitudes.max()+0.5)
+                                    
   ax_h.set_ylabel('$Log_{10}(N$)')
   ax_h.set_xlabel('Magnitud')
   ax_h.grid(ls='--', c='gray', alpha=0.7)
   ax_h.set_title('Gutenberg-Richter Plot')
-  ax_h.set_xlim(left=magnitudes.min()-0.5, right=magnitudes.max()+0.5)
+  #ax_h.set_xlim(left=magnitudes.min()-0.5, right=magnitudes.max()+0.5)
