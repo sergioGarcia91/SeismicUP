@@ -6,6 +6,7 @@ from .mc_menor_pend import mc_menor_pendiente
 from .get_grl_values_noise import get_GutenbergRichter_values_noised
 from .get_grl_values import get_GutenbergRichter_values
 from .get_grl_values_boost import get_GutenbergRichter_values_boosted
+from .get_grl_values_boost_2 import get_GutenbergRichter_values_boosted_2
 from .retornos_ import periodo_retorno
 from .corr_integral import correlacion_integral_xy
 from .estimar_dc import estimar_Dc
