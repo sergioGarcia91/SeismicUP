@@ -42,12 +42,13 @@ def periodo_retorno(a_value,
     P_all_years = 1-np.exp((-1*N_*T_enYears))
     retornos_ = {'Years': [],
                  'value': [],
-                'm': []}
+                 'm': []}
+    retornos_['m'].append(m)
+    
     for retorno_year in retorno_years:
       retornos_['Years'].append(retorno_year)
       retornos_['value'].append(1-np.exp((-1*N_*retorno_year)))
-      retornos_['m'].append(m)
-
+    
     # Return period
     theta_years = 1/N1_45 # years
     theta_days = theta_years * 365
