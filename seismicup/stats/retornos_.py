@@ -71,14 +71,14 @@ def periodo_retorno(a_value,
       print('Retorno cada: ', theta_months, ' meses')
       print('\n')
   dict_periodo_retorno = {
-      'm': m_lista,
-      'N': N_calculado,
-      'P_1year': P_1year_calculado,
-      'P_all_time': P_all_time,
-      'P_retornos': P_retornos_,
-      'theta_years': theta_years_calculado,
-      'theta_days': theta_days_calculado,
-      'theta_months': theta_months_calculado
+      'm': np.array(m_lista),
+      'N': np.array(N_calculado),
+      'P_1year': np.array(P_1year_calculado),
+      'P_all_time': np.array(P_all_time),
+      'P_retornos': np.array(P_retornos_),
+      'theta_years': np.array(theta_years_calculado),
+      'theta_days': np.array(theta_days_calculado),
+      'theta_months': np.array(theta_months_calculado)
   }
 
   return dict_periodo_retorno
