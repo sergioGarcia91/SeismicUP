@@ -47,7 +47,7 @@ def get_GutenbergRichter_values_boosted_2(magnitudes,
       sumar_cantidad = sumar_cantidad.sum()
       N_MC.append(sumar_cantidad)
     N_MC = np.array(N_MC)
-    Mc = magnitudes_bins[np.argmax(N)] + correcion_m
+    Mc = magnitudes_bins[np.argmax(N_MC)] + correcion_m
                   
     filtro_0 = N >= 1
     N = N[filtro_0]
