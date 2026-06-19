@@ -9,4 +9,5 @@ from .get_grl_values_boost import get_GutenbergRichter_values_boosted
 from .get_grl_values_boost_2 import get_GutenbergRichter_values_boosted_2
 from .retornos_ import periodo_retorno
 from .corr_integral import correlacion_integral_xy
+from .corr_integral import correlacion_integral_xyz
 from .estimar_dc import estimar_Dc
